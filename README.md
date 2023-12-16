@@ -25,10 +25,6 @@ This Flutter application is an e-commerce platform that allows users to shop for
   - Users can view and edit their profile information.
   - Provides options to update personal details.
 
-## Screenshots (if applicable)
-
-Include screenshots of different app screens here.
-
 ## Technologies Used
 
 - Flutter: Cross-platform framework for building applications.
