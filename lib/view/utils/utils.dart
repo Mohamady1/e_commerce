@@ -1,5 +1,3 @@
-import 'dart:math';
-
 class Utils {
   static bool loginValidation(String email, String pass) {
     if (email.isEmpty || pass.isEmpty) {
