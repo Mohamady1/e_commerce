@@ -1,4 +1,3 @@
-import 'package:e_commerce/controller/firebase/firestore_firebase_helper.dart';
 import 'package:e_commerce/controller/products_controller.dart';
 import 'package:e_commerce/model/rec_product_model.dart';
 import 'package:e_commerce/view/widgets/recommendation_product_card.dart';

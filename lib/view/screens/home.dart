@@ -1,6 +1,5 @@
 import 'package:e_commerce/controller/firebase/firebase_auth_helper.dart';
 import 'package:e_commerce/controller/firebase/cloud_firebase_helper.dart';
-import 'package:e_commerce/controller/firebase/firestore_firebase_helper.dart';
 import 'package:e_commerce/controller/home/home_controller.dart';
 import 'package:e_commerce/controller/products_controller.dart';
 import 'package:e_commerce/view/widgets/filter_buttons.dart';
