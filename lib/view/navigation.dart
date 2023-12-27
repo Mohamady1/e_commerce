@@ -1,6 +1,7 @@
 import 'package:e_commerce/view/screens/cart.dart';
 import 'package:e_commerce/view/screens/home.dart';
 import 'package:e_commerce/view/screens/profile.dart';
+import 'package:e_commerce/view/screens/recommendation.dart';
 import 'package:e_commerce/view/screens/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/view/utils/colors.dart' as color;
@@ -13,7 +14,13 @@ class NavigationPage extends StatefulWidget {
 }
 
 class _NavigationPageState extends State<NavigationPage> {
-  final List<Widget> _tabs = [Home(), Wishlist(), Cart(), Profile()];
+  final List<Widget> _tabs = [
+    Home(),
+    Recommendation(),
+    Wishlist(),
+    Cart(),
+    Profile()
+  ];
 
   int _currentIndex = 0;
 
@@ -40,6 +47,10 @@ class _NavigationPageState extends State<NavigationPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.recommend),
+            label: "Recommendation",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),

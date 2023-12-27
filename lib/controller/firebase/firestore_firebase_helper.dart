@@ -20,6 +20,17 @@ class FireStoreHelper {
     return user;
   }
 
+  static Future getUserWeight() async {
+    String weight = "";
+    DocumentReference snapshots = cloudFireStoreUsers
+        .doc(FirebaseAuthHelper.firebaseAuth.currentUser!.uid);
+    await snapshots.get().then((value) {
+      final user = value.data() as Map;
+      weight = user["weight"];
+    });
+    return weight;
+  }
+
   static Future addNewUser(Map userData) async {
     await cloudFireStoreUsers
         .doc(FirebaseAuthHelper.firebaseAuth.currentUser!.uid)

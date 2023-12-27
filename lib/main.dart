@@ -3,6 +3,7 @@ import 'package:e_commerce/view/navigation.dart';
 import 'package:e_commerce/view/screens/home.dart';
 import 'package:e_commerce/view/screens/login.dart';
 import 'package:e_commerce/view/screens/product_page.dart';
+import 'package:e_commerce/view/screens/recommendation.dart';
 import 'package:e_commerce/view/screens/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/nav", page: () => NavigationPage()),
         GetPage(name: "/home", page: () => Home()),
         GetPage(name: "/product_page", page: () => ProductPage()),
+        GetPage(name: "/recommendation", page: () => Recommendation()),
       ],
     );
   }
